@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Buscador del clima</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="weather-card">
+
+        <!-- Buscador -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Escribe una ciudad"
+            >
+
+            <button id="searchButton">
+                🔍
+            </button>
+
+        </div>
+
+
+        <!-- Mensaje -->
+        <p id="message"></p>
+
+
+        <!-- Información del clima -->
+        <section id="weatherInfo" class="weather-info">
+
+            <p id="conditionText" class="condition">
+                Parcialmente nublado
+            </p>
+
+            <img
+                id="weatherIcon"
+                class="weather-icon"
+                src=""
+                alt="Icono del clima"
+            >
+
+            <h1 id="temperature">
+                --°C
+            </h1>
+
+            <h2 id="cityName">
+                Ciudad
+            </h2>
+
+
+            <!-- Datos inferiores -->
+            <div class="weather-details">
+
+                <div class="detail">
+
+                    <span class="detail-icon">💧</span>
+
+                    <div>
+                        <strong id="humidity">
+                            --%
+                        </strong>
+
+                        <p>Humedad</p>
+                    </div>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span class="detail-icon">💨</span>
+
+                    <div>
+                        <strong id="wind">
+                            -- km/h
+                        </strong>
+
+                        <p>Viento</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Créditos -->
+        <p class="credit">
+            Datos del clima proporcionados por WeatherAPI.com
+        </p>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

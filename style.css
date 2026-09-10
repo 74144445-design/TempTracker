@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #00d9a6,
+        #4568a8
+    );
+
+    padding: 20px;
+}
+
+
+.weather-card {
+    width: 100%;
+    max-width: 460px;
+
+    min-height: 600px;
+
+    padding: 35px 30px;
+
+    border-radius: 25px;
+
+    background: linear-gradient(
+        160deg,
+        #08ddb1,
+        #4565a3
+    );
+
+    color: white;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Buscador */
+
+.search-box {
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+.search-box input {
+    flex: 1;
+
+    height: 58px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    padding: 0 22px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    color: #333;
+
+    background: #eafffc;
+}
+
+
+.search-box button {
+    width: 58px;
+    height: 58px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.search-box button:hover {
+    transform: scale(1.08);
+}
+
+
+/* Mensaje */
+
+#message {
+    min-height: 24px;
+
+    color: #ffffff;
+
+    margin-bottom: 10px;
+}
+
+
+/* Condición */
+
+.condition {
+    font-size: 18px;
+
+    font-style: italic;
+
+    margin-bottom: 10px;
+}
+
+
+/* Imagen del clima */
+
+.weather-icon {
+    width: 130px;
+
+    height: 130px;
+
+    object-fit: contain;
+
+    margin-bottom: 5px;
+}
+
+
+/* Temperatura */
+
+#temperature {
+    font-size: 70px;
+
+    font-weight: 400;
+
+    margin: 5px 0;
+}
+
+
+/* Ciudad */
+
+#cityName {
+    font-size: 34px;
+
+    font-weight: 400;
+
+    margin-bottom: 35px;
+}
+
+
+/* Datos */
+
+.weather-details {
+    display: flex;
+
+    justify-content: space-around;
+
+    gap: 30px;
+
+    margin-top: 20px;
+}
+
+
+.detail {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-align: left;
+}
+
+
+.detail-icon {
+    font-size: 35px;
+}
+
+
+.detail strong {
+    font-size: 22px;
+
+    font-weight: 400;
+}
+
+
+.detail p {
+    font-size: 14px;
+
+    margin-top: 3px;
+}
+
+
+/* Crédito */
+
+.credit {
+    margin-top: 40px;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+}
+
+
+/* Adaptación para celulares */
+
+@media (max-width: 500px) {
+
+    .weather-card {
+        min-height: 570px;
+
+        padding: 25px 20px;
+    }
+
+
+    #temperature {
+        font-size: 60px;
+    }
+
+
+    #cityName {
+        font-size: 28px;
+    }
+
+
+    .weather-details {
+        gap: 15px;
+    }
+
+
+    .detail strong {
+        font-size: 18px;
+    }
+
+}
